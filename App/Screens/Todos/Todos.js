@@ -6,6 +6,7 @@ import TodosItemComponent from '../../Components/TodosItemComponent'
 import FabButtonComponent from '../../Components/FabComponent'
 import * as Actions from './TodosDispatchTypes'
 import { AuthContext } from '../../../App'
+
 const ListEmptyComponent = () => {
   return (
     <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 150 }}>
@@ -13,8 +14,6 @@ const ListEmptyComponent = () => {
     </View>
   )
 }
-
-
 
 const TodoList = (props) => {
   const { state, dispatch } = React.useContext(AuthContext);

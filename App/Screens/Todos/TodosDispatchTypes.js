@@ -1,3 +1,4 @@
+//All dispatch types
 export const ADD_TODO = 'ADD_TODO'
 export const CHANGE_TAB = 'CHANGE_TAB'
 export const SET_INITIAL_STATE = 'SET_INITIAL_STATE'

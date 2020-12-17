@@ -5,7 +5,7 @@ export const initialState = {
     success: '',
     selectedFilter: 'All Todos'
 }
-
+//To handle all the states of todo list.
 export const todoreducer = (state, action) => {
     switch (action.type) {
         case Actions.CHANGE_TAB:
@@ -30,8 +30,6 @@ export const todoreducer = (state, action) => {
                 todosList:state.todosList.filter(items=>items.id !== action.payload)
             }
         case Actions.EDIT_TODO:
-            console.log("sdpvjds[jvdsj[pvj&&&&&&&&&&&&*************8")
-            console.log(action.payload)
             return{
                 ...state,
                 todosList:state.todosList.map(items=>{
